@@ -53,7 +53,10 @@ useEffect(() => {
          xl:hidden text-white flex
           flex-col text-center gap-8 fixed bg-primary-200 w-full left-0
           text-base uppercase font-medium transition-all
-         `}/>
+         `}
+         // pass a function that closes the menu - triggered when any link inside is clicked
+         onLinkClick={() => setOpenMenu(false)}
+         />
 
          {/* desktop nav - hidden on small device*/}
       <Nav containerStyles=" py-12 flex gap-4 text-white hidden xl:flex

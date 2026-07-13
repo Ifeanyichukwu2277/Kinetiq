@@ -64,7 +64,9 @@ const BmiCalculator = () => {
   return (
     // Section background is light/white like the reference, sitting right
     // after the darker "IMPROVE YOUR LIFE" section above it.
-    <section className="bg-white py-24" id="BMI">
+    // Added px-4 (mobile) and xl:px-28 (desktop) so content doesn't sit
+    // flush against the screen edges — matches the Testimonial section's pattern.
+    <section className="bg-white py-24 px-4 xl:px-28" id="BMI">
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
         {/* LEFT SIDE — heading + the reference range table, like the picture */}
