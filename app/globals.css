@@ -1,26 +1,74 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* container */
+  --container-center: true;
+  --container-padding: 15px;
+
+  /* screens (breakpoints) */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1400px;
+
+  /* fonts */
+  --font-oswald: var(--font-oswald);
+  --font-roboto: var(--font-roboto);
+
+  /* background images */
+  --background-image-hero: url(/assets/img/hero/hero-male.jpg);
+  --background-image-hero: url(/assets\img\hero\hero-female2.png);
+  --background-image-membership: url(/assets/img/membership/bg.png);
+
+  /* colors */
+  --color-primary: #333;
+  --color-primary-100: #484848;
+  --color-primary-200: #151515;
+  --color-primary-300: #111;
+  --color-accent: #d4000d;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  body {
+    @apply font-roboto;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+ @apply font-oswald font-bold uppercase;
+  }
+
+  .h1{
+    @apply text-white text-7xl lg:text-[128px] tracking-[-3px];
+  }
+
+  .h2{
+    @apply text-[36px]
+  }
+
+  .h3{
+    @apply text-[32px]
+  }
+
+  .h4{
+    @apply text-[26px]
+  }
+
+  .h5{
+    @apply text-[22px]
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.active{
+  @apply text-accent
+}
+
+/* swiper pagination style */
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet
+.swiper-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+  @apply bg-accent;
 }
