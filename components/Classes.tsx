@@ -16,7 +16,7 @@ const classes = [
   },
   {
     name: "Cardio strength",
-    img:  "/assets/img/classes/cardio-strength.jpg",
+    img:  "/assets/img/classes/Cardio-strength.jpg",
     description: 
        `High-intensity intervals that torch calories while building 
         endurance, keeping your heart strong and your energy limitless.`
@@ -30,7 +30,7 @@ const classes = [
   },
   {
     name: "Crossfit",
-    img:  "/assets/img/classes/crossfit-2.jpg",
+    img:  "/assets/img/classes/Crossfit-2.jpg",
     description: 
        `Constantly varied, high-intensity functional movements that push 
         your limits and build a body ready for anything.`

@@ -24,7 +24,7 @@ const Hero = () => {
         </div>
         <div className="relative h-full w-full">
           <Image
-            src="/assets/img/hero/hero-female2.png"
+            src="/assets/img/hero/pexels-alexapopovich-10551482.jpg"
             alt="Gym hero right"
             fill
             priority

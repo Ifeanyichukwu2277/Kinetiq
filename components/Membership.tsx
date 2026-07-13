@@ -13,7 +13,7 @@ const Membership = () => {
        initial="hidden"
        whileInView={"show"}
        viewport={{once: false, amount: 0.2}}
-      className="py-8 xl:py-0 lg:h-[95vh] bg-membership
+      className="py-8 xl:py-16 lg:min-h-[95vh] bg-membership
        bg-cover bg-center relative before:w-full before:h-full
         before:bg-black/50 before:absolute before:top-0 before:z-10" id="prices" >
 
